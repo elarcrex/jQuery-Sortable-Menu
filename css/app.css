@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 1.3rem;
+}
+
+.Container {
+    width: 500px;
+    margin: auto;
+}
+
+.Menu-wrap {
+    border: 5px dashed #dadada;
+    padding: 10px;
+}
+
+.Menu, .Menu ol {list-style: none;}
+
+.Menu ol {margin-top: 4px;}
+
+.Menu {padding: 0;}
+
+.Menu__item {
+    margin: 5px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.Menu__item div {
+    position: relative;
+    background-color: #eaeaea;
+}
+
+.Menu__item span {
+    display: inline-block;
+    background-color: #c5c4c4;
+    color: white;
+    cursor: pointer;
+    padding: 0 7px;
+}
+
+.Item__handle {margin-right: 5px;}
+.Item__handle:before {content: "≡";}
+
+.Menu__item span:hover {background: #a5a4a4;}
+
+.Placeholder { outline: 1px dashed #c1c1c1;}
+
+.Output {
+    font-size: 1rem;
+    font-family: monospace;
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 6px 0;
+    margin-top: 10px;
+}
+
+.Output:before {
+    content: "Output:";
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
